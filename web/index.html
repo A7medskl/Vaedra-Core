@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaedra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="notification" class="notification hidden">
+        <div class="notification-content">
+            <div class="request-info">
+                <span class="request-title" id="requestTitle">Trade Request</span>
+                <span class="request-from" id="requestFrom">From: PlayerName</span>
+            </div>
+            <div class="request-description" id="requestDescription">
+                Would you like to trade your weapon for $5000?
+            </div>
+        </div>
+        
+        <div class="notification-actions">
+            <button class="btn btn-accept" id="acceptBtn">
+                <span class="btn-icon">✓</span>
+                <span class="btn-text">Accept</span>
+                <span class="btn-key">(Y)</span>
+            </button>
+            <button class="btn btn-decline" id="declineBtn">
+                <span class="btn-icon">✗</span>
+                <span class="btn-text">Decline</span>
+                <span class="btn-key">(N)</span>
+            </button>
+        </div>
+
+        <div class="notification-timer">
+            <div class="timer-progress" id="timerProgress"></div>
+        </div>
+        
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

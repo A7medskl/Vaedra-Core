@@ -1,0 +1,20 @@
+CREATE TABLE Players(
+    id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    steam varchar(255) NOT NULL UNIQUE,
+    license varchar(255) NOT NULL,
+    discord varchar(255) NOT NULL,
+    xbl varchar(255) NOT NULL,
+    live varchar(255) NOT NULL,
+    fivem varchar(255) NOT NULL,
+    ip varchar(255) NOT NULL,
+    tokens varchar(255) NOT NULL,
+    username varchar(255) NOT NULL,
+    stats json NOT NULL,
+    role varchar(255) NOT NULL DEFAULT 'user',
+    group varchar(255) NOT NULL DEFAULT 'user',
+    skin json NOT NULL,
+    last_login timestamp NULL,
+    playtime int NOT NULL DEFAULT 0,
+    created_at timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
